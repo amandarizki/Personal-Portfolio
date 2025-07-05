@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanda Rizki Koreana - Amanda's Portfolio 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-color: #0a192f; 
+        --secondary-color: #1c3b70; 
+        --accent-color: #facc15; 
+        --text-dark: #333333;
+        --text-light: #e6f1ff;
+        --bg-light: #f8f9fa;
+        --card-bg: #ffffff;
+        --section-bg: #f0f4f8;
+        --dark-accent: #172a45;
+    }
+    html {
+        zoom: 0.8; /* Untuk browser modern */
+        -moz-transform: scale(0.8); /* Firefox */
+        -moz-transform-origin: 0 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-light);
+        color: var(--text-dark);
+        line-height: 1.7;
+        scroll-behavior: smooth;
+    }
+
+
+    h1, h2, h3, h4 {
+        font-family: 'Montserrat', sans-serif;
+        color: var(--primary-color);
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+        margin-bottom: 0.5em;
+        background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    h2.section-title {
+        font-size: 2.5rem;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 15px;
+        margin-bottom: 2.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    h2.section-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: var(--secondary-color);
+        border-radius: 2px;
+    }
+
+    p {
+        margin-bottom: 1.5em;
+        color: var(--text-dark);
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        background-color: #0a192f;
+        padding: 1rem 5%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 0.6rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    nav a {
+        color: #e6f1ff;
+        text-decoration: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        white-space: nowrap; 
+    }
+
+    nav a:hover {
+        background-color: #4b8bec; 
+        color: #0a192f;
+    }
+    nav {
+        background-color: var(--primary-color);
+        padding: 1rem 5%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        white-space: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-links {
+        display: inline-flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        width: max-content;
+    }
+
+    nav a {
+        color: var(--text-light);
+        text-decoration: none;
+        padding: 0.8rem 1.5rem;
+        margin: 0 0.2rem;
+        border-radius: 25px; /* More rounded */
+        transition: all 0.3s ease;
+        font-weight: 500;
+        text-align: center;
+        display: inline-block;
+    }
+
+    nav a:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        transform: translateY(-2px);
+    }
+
+    
+    #hero {
+        background: linear-gradient(135deg, var(--primary-color), #1a3a6a);
+        color: var(--text-light);
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 5%;
+        text-align: center;
+    }
+
+    #hero h1 {
+        color: #FFD700; 
+        text-shadow: none;
+        background: none; 
+        -webkit-background-clip: initial;
+        background-clip: initial;
+        position: relative;
+        z-index: 2;
+        font-weight:
+    }
+
+    .hero-text-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2.5rem;
+    }
+
+    .hero-text-container p {
+        color: var(--text-light);
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Buttons - More Rounded */
+    .btn {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        text-decoration: none;
+        border-radius: 25px; /* More rounded */
+        font-weight: 600;
+        transition: all 0.3s ease;
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    .btn:hover {
+        background-color: var(--accent-color);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Sections */
+    section {
+        padding: 5rem 5%;
+    }
+
+    section:nth-child(odd) {
+        background-color: var(--section-bg);
+    }
+
+    section:nth-child(even) {
+        background-color: var(--bg-light);
+    }
+
+    /* About Section */
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .about-image-wrapper {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid var(--secondary-color);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+    }
+
+    .about-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text-content {
+        background-color: var(--card-bg);
+        padding: 2.5rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        width: 100%;
+    }
+
+    .text-content p {
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    /* Skills Section */
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .skills-column {
+        background-color: var(--card-bg);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .skills-column h3 {
+        color: var(--secondary-color);
+        text-align: center;
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 0.8rem;
+    }
+
+    .skills-column h3::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background-color: var(--accent-color);
+    }
+
+    .skills-column ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .skills-column li {
+        padding: 0.8rem 0;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+    }
+
+    /* Timeline */
+    .timeline {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: var(--secondary-color);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -2px;
+    }
+
+    .timeline-item {
+        padding: 1rem 2rem;
+        position: relative;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .timeline-item:nth-child(odd) {
+        left: 0;
+        text-align: right;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 50%;
+    }
+
+    .timeline-item-content {
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        text-align: center;
+    }
+
+    .timeline-item h3, 
+    .timeline-item p.company,
+    .timeline-item p.duration {
+        text-align: center;
+    }
+
+    .timeline-item p {
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    .timeline-item-marker {
+        width: 20px;
+        height: 20px;
+        background-color: var(--card-bg);
+        border: 4px solid var(--accent-color);
+        border-radius: 50%;
+        position: absolute;
+        top: 2rem;
+        right: -10px;
+        z-index: 1;
+    }
+
+    .timeline-item:nth-child(even) .timeline-item-marker {
+        left: -10px;
+    }
+
+
+    .project-grid, 
+    .organization-grid, 
+    .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .project-card, 
+    .organization-card, 
+    .cert-card {
+        background-color: var(--card-bg);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease;
+        margin-bottom: 2rem;
+    }
+
+    .project-card:hover, 
+    .organization-card:hover, 
+    .cert-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .project-image-container, 
+    .organization-image-container, 
+    .cert-image-container {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .project-card img, 
+    .organization-card img, 
+    .cert-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .project-card:hover img, 
+    .organization-card:hover img, 
+    .cert-card:hover img {
+        transform: scale(1.1);
+    }
+
+    .project-info, 
+    .organization-info, 
+    .cert-info {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .project-info h3, 
+    .organization-info h3, 
+    .cert-info h3 {
+        margin-bottom: 0.8rem;
+    }
+
+    .project-info p, 
+    .organization-info p, 
+    .cert-info p {
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+    .project-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    #certifications .cert-grid {
+        gap: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .cert-card {
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cert-image-container {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Contact Section */
+    #contact {
+        background: linear-gradient(135deg, var(--primary-color), #1a3a6a);
+        color: var(--text-light);
+        text-align: center;
+    }
+
+    #contact h2, 
+    #contact p {
+        color: var(--text-light);
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(75, 140, 236, 0.1);
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+        background-color: var(--secondary-color);
+        transform: translateY(-3px);
+    }
+
+    .social-links img {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        color: var(--text-light);
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 1024px) {
+        h1 {
+            font-size: 2.8rem;
+        }
+        
+        h2.section-title {
+            font-size: 2.2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.4rem;
+        }
+        
+        h2.section-title {
+            font-size: 2rem;
+        }
+        
+        .hero-text-container {
+            padding: 1.5rem;
+        }
+        
+        .timeline::before {
+            left: 31px;
+        }
+        
+        .timeline-item {
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 0;
+        }
+        
+        .timeline-item-marker {
+            left: 21px;
+        }
+        
+        .timeline-item-content {
+            text-align: left;
+        }
+        
+        .timeline-item h3, 
+        .timeline-item p.company,
+        .timeline-item p.duration,
+        .timeline-item p {
+            text-align: left;
+            text-align-last: left;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 2rem;
+        }
+        
+        h2.section-title {
+            font-size: 1.8rem;
+        }
+        
+        .btn {
+            padding: 0.7rem 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        section {
+            padding: 3rem 5%;
+        }
+        
+        .about-image-wrapper {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .text-content, 
+        .skills-column, 
+        .project-card, 
+        .organization-card, 
+        .cert-card {
+            padding: 1.5rem;
+        }
+        
+        nav {
+            padding: 0.8rem 5%;
+        }
+        
+        nav a {
+            padding: 0.6rem 1rem;
+            font-size: 0.9rem;
+        }
+    }
+
+    .software-category {
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+
+    .software-category h3 {
+        margin-bottom: 1.5rem;
+        color: var(--secondary-color);
+    }
+
+    .software-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .software-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90px;
+        transition: transform 0.3s ease;
+    }
+
+    .software-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .software-logo {
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        padding: 10px;
+    }
+
+    .software-logo img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .software-item p {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+</style>
+</head>
+<body>
+
+    <nav>
+        <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience"> Work Experience</a>
+            <a href="#organization">Organizations</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="hero">
+      <div class="hero-text-container">
+        <h1>Hi, I’m Amanda Rizki</h1>
+        <p>
+          I’m an Undergraduate Statistics Student at Diponegoro University, driven by a curiosity to uncover insights and create data-powered solutions. As an aspiring Data Analyst and Business Analyst, I’m passionate about turning information into strategies that inspire growth and smarter decisions.
+        </p>
+        <p>
+          Explore my portfolio to see how I bring data to life.
+        </p>  
+      </div>
+      <div class="hero-buttons">
+          <a href="#projects" class="btn">See My Work</a>
+          <a href="https://drive.google.com/file/d/14S7E-qLdOqYo-O5BuJ83rhE_VgZiQOdc/view?usp=drive_link" class="btn btn-secondary" target="_blank">Download My Resume</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image-wrapper">
+                <img src="images/foto profile.jpg" alt="Profile Photo">
+            </div>
+            <div class="text-content">
+                <p>Hello! I’m <strong>Amanda Rizki</strong>, a final year Statistics student at Diponegoro University with a deep passion for data and statistics, especially in <strong>data analysis</strong> and <strong>business analysis</strong>. I am driven by curiosity to uncover insights, identify patterns, and turn complex data into clear, actionable strategies that support effective decision-making and business growth.</p>
+                <p>Throughout my academic journey and hands-on experiences, I have developed strong skills in <strong>data processing, visualization, and statistical modeling</strong>. I am proficient in using tools such as <strong>Python, R, SQL, SPSS, Tableau, Looker Studio,</strong> and <strong>Microsoft Excel</strong> to solve real-world problems, build dashboards, and present findings in a way that is both insightful and impactful.</p>
+                <p>Beyond technical expertise, I have honed my <strong>leadership, communication, and teamwork</strong> abilities through various organizational roles, competitions, and internships. I am accustomed to collaborating with diverse teams, delivering results under deadlines, and communicating complex analyses to both technical and non-technical audiences.</p>
+                <p>I am a <strong>detail-oriented, analytical, and adaptable</strong> individual who thrives in dynamic environments. With a commitment to continuous learning, I am eager to contribute my skills and enthusiasm to data-driven projects that create value and inspire innovation.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Software Proficiency</h2>
+        <div class="software-category">
+        <h3>Microsoft Office Suite</h3>
+        <div class="software-container">
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/word.png" alt="Word">
+            </div>
+            <p>Microsoft Word</p>
+            </div>
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/excel.png" alt="Excel">
+            </div>
+            <p>Microsoft Excel</p>
+            </div>
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/powerpoint.png" alt="PowerPoint">
+            </div>
+            <p>Microsoft PowerPoint</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="software-category">
+        <h3>Statistical Analysis</h3>
+        <div class="software-container">
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/spss.png" alt="SPSS">
+            </div>
+            <p>SPSS</p>
+            </div>
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/minitab.png" alt="Minitab">
+            </div>
+            <p>Minitab</p>
+            </div>
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/eviews.png" alt="Eviews">
+            </div>
+            <p>Eviews</p>
+            </div>
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/r.png" alt="R">
+            </div>
+            <p>R</p>
+            </div>
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/python.png" alt="Python">
+            </div>
+            <p>Python</p>
+            </div>
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/postgre.png" alt="PostgreSQL">
+            </div>
+            <p>PostgreSQL</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="software-category">
+        <h3>Visualization</h3>
+        <div class="software-container">
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/tableau.png" alt="Tableau">
+            </div>
+            <p>Tableau</p>
+            </div>
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/looker.png" alt="Looker Studio">
+            </div>
+            <p>Looker</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="software-category">
+        <h3>Editorial</h3>
+        <div class="software-container">
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/canva.png" alt="Canva">
+            </div>
+            <p>Canva</p>
+            </div>
+            <div class="software-item">
+            <div class="software-logo">
+                <img src="images/logos/figma.png" alt="Figma">
+            </div>
+            <p>Figma</p>
+            </div>
+        </div>
+        </div>
+
+
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skills-column">
+                <h3>Hard Skills</h3>
+                <ul class="no-bullet">
+                    <li>
+                        <p>
+                            <strong>Data Processing & Analysis</strong><br>
+                            Python (Pandas, NumPy), R, SQL, SPSS, Minitab, Eviews
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Data Visualization</strong><br>
+                            Tableau, Looker Studio, Microsoft Excel (Pivot Table, Charts)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Database Management</strong><br>
+                            MySQL, PostgreSQL
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Statistical Modeling</strong><br>
+                            Regression Analysis, Hypothesis Testing, Time Series Analysis
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Reporting & Presentation</strong><br>
+                            Microsoft PowerPoint, Canva, Figma
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Web Basics</strong><br>
+                            HTML, CSS, basic JavaScript
+                        </p>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="skills-column">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Analytical & Critical Thinking</li>
+                    <li>Problem Solving</li>
+                    <li>Attention to Detail</li>
+                    <li>Time Management</li>
+                    <li>Communication & Data Storytelling</li>
+                    <li>Leadership & Team Management</li>
+                    <li>Teamwork & Collaboration</li>
+                    <li>Initiative & Proactive </li>
+                    <li>Public Speaking</li>
+                    <li>Adaptability</li>
+                    <li>Learning Agility</li>
+                    <li>Decision Making</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-item-content">
+                    <h3>Diponegoro University</h3>
+                    <p class="company">S1 Statistics | GPA: 3.87/4.00</p>
+                    <p class="duration">August 2022 - Present</p>
+                    <p>
+                        Currently pursuing a Bachelor’s degree in Statistics at Diponegoro University with an outstanding academic record. Actively engaged in academic activities and consistently completing assignments while developing professional skills through organizational involvement, internships, and competitions. 
+                    </p>
+                </div>
+                <div class="timeline-item-marker"></div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-item-content">
+                    <h3>SMAN 1 Pati</h3>
+                    <p class="company">Natural Sciences | GPA: 91.87/100</p>
+                    <p class="duration">July 2019 - May 2022</p>
+                    <p>
+                        Completed high school education at SMA Negeri 1 Pati, demonstrating strong academic performance and active engagement in various learning activities. Developed organizational and technical skills by serving as Head of the Website Department in OSBIT and contributing as a member of PASUS, supporting community service and extracurricular programs.
+                    </p>
+                </div>
+                <div class="timeline-item-marker"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+        <div class="project-pdf-container">
+            <iframe
+            src="projects/Building an ETL Pipeline.pdf"
+            width="100%"
+            height="300px"
+            style="border: 1px solid #ccc;"
+            ></iframe>
+        </div>
+        <div class="project-info">
+            <h3 class="project-title">BUILDING AN ETL PIPELINE: DEKORUMA E-COMMERCE DATA</h3>
+            <p class="project-description">
+            End-to-end data pipeline project to extract e-commerce product data, perform cleaning and exploration with Pandas, and load the processed dataset into a PostgreSQL database for further analysis.
+            </p>
+            <div class="project-links">
+            <a href="https://drive.google.com/file/d/1kfTGsO9o7M9DYotbv1f32ToU2ABNuFGg/view?usp=drive_link" class="btn" target="_blank">View Presentation</a>
+            <a href="https://github.com/amandarizki/Building-an-ETL-Pipeline-Dekoruma-E-Commerce-Data" class="btn" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="project-card">
+        <div class="project-pdf-container">
+            <iframe
+            src="projects/Customer Personality Analysis.pdf"
+            width="100%"
+            height="300px"
+            style="border: 1px solid #ccc;"
+            ></iframe>
+        </div>
+        <div class="project-info">
+            <h3 class="project-title">CUSTOMER PERSONALITY ANALYSIS</h3>
+            <p class="project-description">
+            A data-driven project to understand customer demographics, purchasing behaviors, and campaign responsiveness. This analysis provides actionable insights for designing targeted marketing strategies and improving customer engagement.
+            </p>
+            <div class="project-links">
+            <a href="https://drive.google.com/file/d/1dWvq8ahJvq1fpq3S1y61lxvQj6akWupa/view?usp=drive_link" class="btn" target="_blank">View Presentation</a>
+            <a href="https://github.com/amandarizki/Customer-Personality-Analysis" class="btn" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        </div>
+    </div>
+        
+    <div class="project-grid">
+        <div class="project-card">
+        <div class="project-pdf-container">
+            <iframe
+            src="projects/Data Warehouse For Sales Analysis.pdf"
+            width="100%"
+            height="300px"
+            style="border: 1px solid #ccc;"
+            ></iframe>
+        </div>
+        <div class="project-info">
+            <h3 class="project-title">DATA WAREHOUSE FOR SALES ANALYSIS</h3>
+            <p class="project-description">
+            This project implements an end-to-end ETL pipeline and Data Warehouse design for The Look, a fictional e-commerce platform. The solution uses PySpark, PostgreSQL, and BigQuery SQL to enable comprehensive sales data analytics.            
+            </p>
+            <div class="project-links">
+            <a href="https://drive.google.com/file/d/1ndWAC_1Gu4-7z6y8w-Z_-eSv74HzHVsb/view?usp=drive_link" class="btn" target="_blank">View Presentation</a>
+            <a href="https://github.com/amandarizki/Data-Warehouse-For-Sales-Analysis" class="btn" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="project-card">
+        <div class="project-pdf-container">
+            <iframe
+            src="projects/Automation Pipeline.pdf"
+            width="100%"
+            height="300px"
+            style="border: 1px solid #ccc;"
+            ></iframe>
+        </div>
+        <div class="project-info">
+            <h3 class="project-title">RETAIL TRANSACTION DATA PIPELINE AUTOMATION</h3>
+            <p class="project-description">
+            This project implements a complete ETL (Extract, Transform, Load) automation pipeline for a retail transaction dataset using PySpark, Apache Airflow, and MongoDB.
+            </p>
+            <div class="project-links">
+            <a href="https://drive.google.com/file/d/10UIvN9k8nvV5wK8J1NjLhxGUY4BLl5vA/view?usp=drive_link" class="btn" target="_blank">View Presentation</a>
+            <a href="https://github.com/amandarizki/Retail-Transaction-Data-Pipeline-Automation" class="btn" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="project-grid">
+        <div class="project-card">
+        <div class="project-pdf-container">
+            <iframe
+            src="projects/BEACH VS MOUNTAIN PREFERENCE ANALYSIS.pdf"
+            width="100%"
+            height="300px"
+            style="border: 1px solid #ccc;"
+            ></iframe>
+        </div>
+        <div class="project-info">
+            <h3 class="project-title">BEACH VS MOUNTAIN PREFERENCE ANALYSIS</h3>
+            <p class="project-description">
+            An interactive data mining project analyzing individuals’ vacation preferences between beach and mountain destinations. Explored relationships between demographic factors (education level, gender), favorite seasons, activities, income, and vacation budgets. Presented insights through interactive charts to identify patterns in travel choices.
+            </p>
+            <div class="project-links">
+            <a href="https://lookerstudio.google.com/reporting/1e7649de-abe2-4a03-b8a2-0fbcd7f0515a" class="btn" target="_blank">View Dashboard</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="project-card">
+        <div class="project-pdf-container">
+            <iframe
+            src="projects/TRAFFIC ACCIDENT DASHBOARD.pdf"
+            width="100%"
+            height="300px"
+            style="border: 1px solid #ccc;"
+            ></iframe>
+        </div>
+        <div class="project-info">
+            <h3 class="project-title">TRAFFIC ACCIDENT DASHBOARD</h3>
+            <p class="project-description">
+            Developed a comprehensive dashboard visualizing traffic accident data over time. Included analysis of crash frequency by date and hour, key contributing factors to severe injuries, and the impact of road and weather conditions on accident rates. Enabled users to explore trends and identify critical safety insights.
+            </p>
+            <div class="project-links">
+            <a href="https://lookerstudio.google.com/reporting/0059e92e-e6f0-4f4f-8721-53253e74a2c2" class="btn" target="_blank">View Dashboard</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Work Experiences</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-item-content">
+                    <h3>Trade Marketing Intern Circle Java</h3>
+                    <p class="company"> Indosat Ooredoo Hutchison Semarang </p>
+                    <p class="duration"> March - May 2025 </p>
+                    <p>
+                        Designed data-driven infographics, analyzed customer and sales data to extract actionable insights, and prepared performance reports to evaluate promotional effectiveness in a telecommunications environment.
+                    </p>
+                </div>
+                <div class="timeline-item-marker"></div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-item-content">
+                    <h3>Internship</h3>
+                    <p class="company">BPS Kabupaten Pati</p>
+                    <p class="duration">January - February 2025</p>
+                    <p>
+                        Analyzed statistical datasets, generated reports and visualizations, and supported the preparation of survey summaries and official publications in compliance with statistical standards.
+                    </p>
+                </div>
+                <div class="timeline-item-marker"></div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-item-content">
+                    <h3>Lecturer Assistant</h3>
+                    <p class="company">Diponegoro University</p>
+                    <p class="duration">August - December 2023</p>
+                    <p>
+                        Facilitated assistance classes, delivered additional explanations of course material, and supported students’ preparation for midterm and final examinations.
+                    </p>
+                </div>
+                <div class="timeline-item-marker"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="organization">
+        <h2 class="section-title">Organizations</h2>
+        <div class="organization-grid">
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/pkuy.jpg" alt="Produktifkuy">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Produktifkuy</h3>
+                    <h4 class="card-subtitle"><strong>Vice Manager of CEO Analyst</strong></h4>
+                    <p class="card-period">January 2025 - Present</p>
+                    <p>Joined Produktifkuy, a personal development and productivity platform, as a CEO Analyst Intern prior to advancing to Vice Manager, where I was responsible for leading and executing flagship programs attended by over 500 participants. In this role, I planned, implemented, and evaluated various initiatives to improve productivity skills, supervised daily operations, monitored performance metrics, provided feedback to team members, and reported progress directly to the CEO.</p>
+                </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/kesma.jpg" alt="BEM FSM Universitas Diponegoro">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">BEM FSM Universitas Diponegoro</h3>
+                    <h4 class="card-subtitle"><strong>Vice Head of Student Welfare</strong></h4>
+                    <p class="card-period">February 2024 - January 2025</p>
+                    <p>Served as Vice Head of Student Welfare after initially contributing as a staff member, supporting the development of student assistance programs and scholarship dissemination. In the leadership role, I managed academic support initiatives benefiting more than 3,000 students, coordinated administrative workflows, facilitated cross-department collaborations, and conducted regular performance evaluations to ensure effective program delivery.</p>
+                </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/udf.jpg" alt="UDF">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Undip Debating Forum</h3>
+                    <h4 class="card-subtitle"><strong>Training and Competition</strong></h4>
+                    <p class="card-period">January 2024 - December 2024</p>
+                    <p>Delivered over 20 weekly training sessions as part of the Training and Competition division, focusing on debate techniques, critical thinking skills, and competition readiness. Additionally, I developed comprehensive training materials, managed event schedules, and oversaw registration and logistical support for debate tournaments throughout the year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="committee">
+        <h2 class="section-title">Committees</h2>
+        <div class="organization-grid">
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/sc24.jpg" alt="SCDay 2024">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Scholarship and Career Day 2024</h3>
+                    <h4 class="card-subtitle"><strong>Steering Committee</strong></h4>
+                    <p class="card-period">March - September 2024</p>
+                    <p>Led strategic planning and cross-functional coordination to deliver impactful scholarship and career programs. Contributed to promotional campaigns and managed stakeholder relations.</p>
+                </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/dsf.JPG" alt="DSF 2024">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Diponegoro Science Festival 2024</h3>
+                    <h4 class="card-subtitle"><strong>Public Relation</strong></h4>
+                    <p class="card-period">May - September 2024</p>
+                    <p>Developed public communication strategies to enhance event visibility and stakeholder engagement. Coordinated media relations, including press releases, social media campaigns, and sponsor collaborations.</p>
+                </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/suksesi.jpg" alt="Suksesi 2024">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Suksesi Himasta 2024</h3>
+                    <h4 class="card-subtitle"><strong>Head of Event Organizer</strong></h4>
+                    <p class="card-period">September - December 2023</p>
+                    <p>Led planning and execution of 4 major events for the leadership election, including serving as MC and moderator. Successfully managed the voting process and coordinated all logistical aspects.</p>
+                </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/odm.jpg" alt="ODM 2023">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">ODM FSM 2023</h3>
+                    <h4 class="card-subtitle"><strong>Staff of Facilitator Division</strong></h4>
+                    <p class="card-period">June - August 2023</p>
+                    <p>Guided new students through orientation activities by designing training materials, delivering presentations on campus life and academic regulations, and developing assessment systems. Ensured effective participation and provided assistance to support smooth adaptation throughout the entire program.</p>
+                </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/sc23.jpg" alt="Scholarship and Career Day 2023">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Scholarship and Career Day 2023</h3>
+                    <h4 class="card-subtitle"><strong>Staff of Event Division</strong></h4>
+                    <p class="card-period"> September - October 2022 </p>
+                    <p>Scholarship and Career Day was a seminar and expo designed to inspire students to pursue scholarships and explore future career opportunities. Prepared event materials, schedules, and logistics for the program, and supported the MC, moderator, and speakers to ensure seamless event delivery.</p>
+                </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/statisticare.jpg" alt="Statisticare">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Statisticare</h3>
+                    <h4 class="card-subtitle"><strong>Staff of Event Division</strong></h4>
+                    <p class="card-period">May - September 2023</p>
+                    <p>Statisticare was a community service program organized by Statistics students of Diponegoro University to support children in local orphanages. Contributed to planning and executing social outreach activities, including donations and educational sessions at Benthlehem and Ar-Rodiyah orphanages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="others">
+        <h2 class="section-title">Other Experiences</h2>
+        <div class="organization-grid">
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/mc lt.jpg" alt="MC LT">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Master of Ceremony</h3>
+                    <h4 class="card-subtitle"><strong>Leadership Training BEM FSM 2023</strong></h4>
+                </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/mc kd.jpeg" alt="MC KD">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Master of Ceremony</h3>
+                    <h4 class="card-subtitle"><strong>Kampanye Dialogis Suksesi Himasta 2024</strong></h4>
+                </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/moderator fnp.jpeg" alt="MOD FNP">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Moderator</h3>
+                    <h4 class="card-subtitle"><strong>Fit and Proper Test Suksesi Himasta 2024</strong></h4>
+                </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/sosial project.jpg" alt="sospro">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Social Project</h3>
+                    <h4 class="card-subtitle"><strong>LKMM-D Fakultas Kedokteran 2023</strong></h4>
+                </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/pengabdian.jpg" alt="Pengabdian Dosen">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Volunteer</h3>
+                    <h4 class="card-subtitle"><strong>Lecturer Community Service Program</strong></h4>
+                 </div>
+            </div>
+            <div class="organization-card">
+                <div class="organization-image-container">
+                    <img src="images/statisticare.jpg" alt="Statisticare">
+                </div>
+                <div class="organization-info">
+                    <h3 class="card-title">Facilitator</h3>
+                    <h4 class="card-subtitle"><strong>ODM FSM 2023</strong></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="images/Hacktiv8.png" alt="Certification 1">
+                </div>
+                <h3>Certified Data Analyst</h3>
+                <p class="issuer">Hacktiv8</p>
+                <p class="date">Issued: 23 May 2025</p>
+                <p class="description">Mastered Python and SQL for data processing, developed ETL pipelines with Airflow, and applied advanced data visualization techniques to deliver actionable insights.</p>
+            </div>
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="images/sql_intermediate certificate_page-0001.jpg" alt="Certification 2">
+                </div>
+                <h3>SQL Intermediate</h3>
+                <p class="issuer">HackerRank</p>
+                <p class="date">Issued: 27 June 2025</p>
+                <p class="description">Validated intermediate SQL skills including complex joins, unions, and sub-queries. Demonstrated ability to design and optimize advanced relational queries.</p>
+            </div>
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="images/sql_basic certificate_page-0001.jpg" alt="Certification 3">
+                </div>
+                <h3>SQL Basic</h3>
+                <p class="issuer">HackerRank</p>
+                <p class="date">Issued: 27 June 2025</p>
+                <p class="description">Certified foundational SQL capabilities covering simple queries, table relationships, and aggregators to retrieve and summarize data effectively.</p>
+            </div>
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="images/python_basic certificate_page-0001.jpg" alt="Certification 4">
+                </div>
+                <h3>Python Basic</h3>
+                <p class="issuer">HackerRank</p>
+                <p class="date">Issued: 27 June 2025</p>
+                <p class="description">Certified basic Python proficiency, including Scalar Types, Control Flow, Strings, Collections and Iteration, Modularity, and Object-Oriented concepts.</p>
+            </div>
+            <div class="cert-card">
+                <div class="cert-image-container">
+                    <img src="images/problem_solving_basic certificate_pages-to-jpg-0001.jpg" alt="Certification 5">
+                </div>
+                <h3>Problem Solving Basic</h3>
+                <p class="issuer">HackerRank</p>
+                <p class="date">Issued: 27 June 2025</p>
+                <p class="description">Assessed core problem-solving skills using fundamental Data Structures (Arrays, Strings) and Algorithms (Sorting, Searching). Proven ability to implement efficient solutions to programming challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Let's Connect!</h2>
+        <p>Feel free to contact me for any inquiries, discussions, or collaborations.</p> <div class="social-links">
+            <a href="mailto: amandarizkipati@gmail.com" target="_blank" aria-label="Email">
+                <img src="images/logos/gmail.png" alt="Email Icon">
+            </a>
+            <a href="https://github.com/amandarizki" target="_blank" aria-label="GitHub">
+                <img src="images/logos/github.png" alt="GitHub Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/amanda-rizki-koreana/" target="_blank" aria-label="LinkedIn">
+                <img src="images/logos/linkedin.png" alt="LinkedIn Icon">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Amanda Rizki Koreana. All rights reserved.</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const navHeight = document.querySelector('nav').offsetHeight;
+                        const offsetTop = targetElement.offsetTop - navHeight;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+
+                    // Close hamburger menu on link click (for mobile)
+                    const navLinks = document.querySelector('.nav-links');
+                    const hamburger = document.querySelector('.hamburger-menu');
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+
+            // Hamburger menu functionality
+            const hamburger = document.querySelector('.hamburger-menu');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            // Lightbox functionality for project images
+            const projectImages = document.querySelectorAll('.project-card img, .organization-card img, .cert-image-container img');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const closeBtn = document.querySelector('.close-btn');
+
+            projectImages.forEach(img => {
+                img.addEventListener('click', () => {
+                    lightbox.style.display = 'block';
+                    lightboxImg.src = img.src;
+                });
+            });
+
+            closeBtn.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+            });
+
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
