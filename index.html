@@ -33,6 +33,7 @@
         scroll-behavior: smooth;
     }
 
+
     h1, h2, h3, h4 {
         font-family: 'Montserrat', sans-serif;
         color: var(--primary-color);
@@ -170,7 +171,7 @@
         background-clip: initial;
         position: relative;
         z-index: 2;
-        font-weight: 700;
+        font-weight:
     }
 
     .hero-text-container {
@@ -662,125 +663,6 @@
         font-size: 0.9rem;
         font-weight: 500;
     }
-
-    /* Hamburger Menu Styles */
-    .hamburger-menu {
-        display: none;
-        flex-direction: column;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 5px;
-    }
-
-    .hamburger-menu .bar {
-        width: 25px;
-        height: 3px;
-        background-color: var(--text-light);
-        margin: 3px 0;
-        transition: 0.3s;
-    }
-
-    /* Lightbox Styles */
-    .lightbox {
-        display: none;
-        position: fixed;
-        z-index: 9999;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .lightbox-content {
-        display: block;
-        margin: auto;
-        max-width: 80%;
-        max-height: 80%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .close-btn {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        color: white;
-        font-size: 40px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    /* Project PDF Container */
-    .project-pdf-container {
-        width: 100%;
-        height: 300px;
-        border: 1px solid #ccc;
-        overflow: hidden;
-    }
-
-    /* Hero Buttons */
-    .hero-buttons {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 2rem;
-    }
-
-    .btn-secondary {
-        background-color: transparent;
-        border: 2px solid var(--secondary-color);
-        color: var(--text-light);
-    }
-
-    .btn-secondary:hover {
-        background-color: var(--secondary-color);
-        color: var(--primary-color);
-    }
-
-    /* Mobile Navigation */
-    @media (max-width: 768px) {
-        .hamburger-menu {
-            display: flex;
-        }
-
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background-color: var(--primary-color);
-            padding: 1rem 0;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-        }
-
-        .nav-links.active {
-            display: flex;
-        }
-
-        .nav-links a {
-            width: 100%;
-            text-align: center;
-            margin: 0.5rem 0;
-        }
-
-        .hamburger-menu.active .bar:nth-child(1) {
-            transform: rotate(-45deg) translate(-5px, 6px);
-        }
-
-        .hamburger-menu.active .bar:nth-child(2) {
-            opacity: 0;
-        }
-
-        .hamburger-menu.active .bar:nth-child(3) {
-            transform: rotate(45deg) translate(-5px, -6px);
-        }
-    }
 </style>
 </head>
 <body>
@@ -797,7 +679,7 @@
             <a href="#about">About Me</a>
             <a href="#education">Education</a>
             <a href="#projects">Projects</a>
-            <a href="#experience">Work Experience</a>
+            <a href="#experience"> Work Experience</a>
             <a href="#organization">Organizations</a>
             <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
@@ -806,9 +688,9 @@
 
     <section id="hero">
       <div class="hero-text-container">
-        <h1>Hi, I'm Amanda Rizki</h1>
+        <h1>Hi, I’m Amanda Rizki</h1>
         <p>
-          I'm an Undergraduate Statistics Student at Diponegoro University, driven by a curiosity to uncover insights and create data-powered solutions. As an aspiring Data Analyst and Business Analyst, I'm passionate about turning information into strategies that inspire growth and smarter decisions.
+          I’m an Undergraduate Statistics Student at Diponegoro University, driven by a curiosity to uncover insights and create data-powered solutions. As an aspiring Data Analyst and Business Analyst, I’m passionate about turning information into strategies that inspire growth and smarter decisions.
         </p>
         <p>
           Explore my portfolio to see how I bring data to life.
@@ -828,7 +710,7 @@
                 <img src="images/foto profile.jpg" alt="Profile Photo">
             </div>
             <div class="text-content">
-                <p>Hello! I'm <strong>Amanda Rizki</strong>, a final year Statistics student at Diponegoro University with a deep passion for data and statistics, especially in <strong>data analysis</strong> and <strong>business analysis</strong>. I am driven by curiosity to uncover insights, identify patterns, and turn complex data into clear, actionable strategies that support effective decision-making and business growth.</p>
+                <p>Hello! I’m <strong>Amanda Rizki</strong>, a final year Statistics student at Diponegoro University with a deep passion for data and statistics, especially in <strong>data analysis</strong> and <strong>business analysis</strong>. I am driven by curiosity to uncover insights, identify patterns, and turn complex data into clear, actionable strategies that support effective decision-making and business growth.</p>
                 <p>Throughout my academic journey and hands-on experiences, I have developed strong skills in <strong>data processing, visualization, and statistical modeling</strong>. I am proficient in using tools such as <strong>Python, R, SQL, SPSS, Tableau, Looker Studio,</strong> and <strong>Microsoft Excel</strong> to solve real-world problems, build dashboards, and present findings in a way that is both insightful and impactful.</p>
                 <p>Beyond technical expertise, I have honed my <strong>leadership, communication, and teamwork</strong> abilities through various organizational roles, competitions, and internships. I am accustomed to collaborating with diverse teams, delivering results under deadlines, and communicating complex analyses to both technical and non-technical audiences.</p>
                 <p>I am a <strong>detail-oriented, analytical, and adaptable</strong> individual who thrives in dynamic environments. With a commitment to continuous learning, I am eager to contribute my skills and enthusiasm to data-driven projects that create value and inspire innovation.</p>
@@ -1013,7 +895,7 @@
                     <p class="company">S1 Statistics | GPA: 3.87/4.00</p>
                     <p class="duration">August 2022 - Present</p>
                     <p>
-                        Currently pursuing a Bachelor's degree in Statistics at Diponegoro University with an outstanding academic record. Actively engaged in academic activities and consistently completing assignments while developing professional skills through organizational involvement, internships, and competitions. 
+                        Currently pursuing a Bachelor’s degree in Statistics at Diponegoro University with an outstanding academic record. Actively engaged in academic activities and consistently completing assignments while developing professional skills through organizational involvement, internships, and competitions. 
                     </p>
                 </div>
                 <div class="timeline-item-marker"></div>
@@ -1136,7 +1018,7 @@
         <div class="project-info">
             <h3 class="project-title">BEACH VS MOUNTAIN PREFERENCE ANALYSIS</h3>
             <p class="project-description">
-            An interactive data mining project analyzing individuals' vacation preferences between beach and mountain destinations. Explored relationships between demographic factors (education level, gender), favorite seasons, activities, income, and vacation budgets. Presented insights through interactive charts to identify patterns in travel choices.
+            An interactive data mining project analyzing individuals’ vacation preferences between beach and mountain destinations. Explored relationships between demographic factors (education level, gender), favorite seasons, activities, income, and vacation budgets. Presented insights through interactive charts to identify patterns in travel choices.
             </p>
             <div class="project-links">
             <a href="https://lookerstudio.google.com/reporting/1e7649de-abe2-4a03-b8a2-0fbcd7f0515a" class="btn" target="_blank">View Dashboard</a>
@@ -1171,18 +1053,6 @@
         <div class="timeline">
             <div class="timeline-item left">
                 <div class="timeline-item-content">
-                    <h3>Data Management Intern</h3>
-                    <p class="company"> Indonesia Stock Exchange (IDX) </p>
-                    <p class="duration"> November - December 2025 </p>
-                    <p>
-                        Assisted the Data Management Unit in updating market data, generating daily and weekly reports, and supporting data quality monitoring within the Data Services Division at the Indonesia Stock Exchange.
-                    </p>
-                </div>
-                <div class="timeline-item-marker"></div>
-            </div>
-            
-            <div class="timeline-item right">
-                <div class="timeline-item-content">
                     <h3>Trade Marketing Intern Circle Java</h3>
                     <p class="company"> Indosat Ooredoo Hutchison Semarang </p>
                     <p class="duration"> March - May 2025 </p>
@@ -1193,7 +1063,7 @@
                 <div class="timeline-item-marker"></div>
             </div>
 
-            <div class="timeline-item left">
+            <div class="timeline-item right">
                 <div class="timeline-item-content">
                     <h3>Internship</h3>
                     <p class="company">BPS Kabupaten Pati</p>
@@ -1205,13 +1075,13 @@
                 <div class="timeline-item-marker"></div>
             </div>
 
-            <div class="timeline-item right">
+            <div class="timeline-item left">
                 <div class="timeline-item-content">
                     <h3>Lecturer Assistant</h3>
                     <p class="company">Diponegoro University</p>
                     <p class="duration">August - December 2023</p>
                     <p>
-                        Facilitated assistance classes, delivered additional explanations of course material, and supported students' preparation for midterm and final examinations.
+                        Facilitated assistance classes, delivered additional explanations of course material, and supported students’ preparation for midterm and final examinations.
                     </p>
                 </div>
                 <div class="timeline-item-marker"></div>
